@@ -1,4 +1,6 @@
 const main = require('../main/main');
+const data = require('../main/datbase');
+
 
 describe('pos', function () {
     var allItems;
