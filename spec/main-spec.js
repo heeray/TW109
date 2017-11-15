@@ -1,6 +1,7 @@
 const main = require('../main/main');
 const data = require('../main/datbase');
-
+var loadAllItems=data.loadAllItems;
+var loadPromotions = data.loadPromotions;
 
 describe('pos', function () {
     var allItems;
@@ -25,7 +26,7 @@ describe('pos', function () {
 
         spyOn(console, 'log');
 
-        printInventory(inputs);
+        main(inputs);
 
         var expectText =
             '***<没钱赚商店>购物清单***\n' +
